@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: url("../public/images/bg-image.webp"); */
+}
+
+.main {
+  position: relative;
+  background-color: #f5f5f5;
+  width: 70%;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.main h1 {
+  background: linear-gradient(90deg, #388e3c, #4caf50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.action-sec {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 8px;
+}
+
+.action-sec button {
+  background-color: #4caf50;
+  color: #f0f8ff;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+.action-sec button:hover {
+  border: 3px solid #4caf50;
+  color: #4caf50;
+  background-color: transparent;
+}
+
+#exp {
+  background-color: #2196f3;
+}
+#exp:hover {
+  border: 3px solid #2196f3;
+  color: #2196f3;
+  background-color: transparent;
+}
+
+.search-sec {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.inp {
+  width: 60%;
+  height: 30px;
+  border: none;
+  border-radius: 6px;
+  padding: 16px 10px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+.inp::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+.inp:focus {
+  outline: none;
+  border: 1px solid #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 90%;
+  }
+
+  .main h1 {
+    text-align: start;
+    font-size: 34px;
+    margin-bottom: 18px;
+  }
+
+  .field {
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 95px;
+  }
+
+  .action-sec {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-sec {
+    width: 100%;
+  }
+
+  .inp {
+    width: 100%;
+  }
+}
