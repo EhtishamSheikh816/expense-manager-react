@@ -59,6 +59,7 @@ const Expense = ({ isOpen, onClose, onAddExpense }) => {
           <input
             type="number"
             placeholder="Amount"
+            min="1"
             value={amount}
             onChange={(e) => {
               setAmount(e.target.value);
